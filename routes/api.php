@@ -19,6 +19,6 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::post('/apple/login',[AppleLoginController::class, 'login']);
+Route::post('/apple/login',[AppleLoginController::class, 'appleLogin']);
 
 
